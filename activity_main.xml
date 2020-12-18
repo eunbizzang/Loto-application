@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/newActivity"
+        android:layout_width="162dp"
+        android:layout_height="74dp"
+        android:layout_marginStart="163dp"
+        android:layout_marginLeft="163dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="163dp"
+        android:layout_marginRight="163dp"
+        android:layout_marginBottom="174dp"
+        android:text="結果を見る"
+        android:textSize="18sp"
+        app:backgroundTint="#8ED3F3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lotoradio" />
+
+    <RadioGroup
+        android:id="@+id/lotoradio"
+        android:layout_width="233dp"
+        android:layout_height="234dp"
+        android:layout_marginStart="128dp"
+        android:layout_marginLeft="128dp"
+        android:layout_marginTop="203dp"
+        android:layout_marginEnd="127dp"
+        android:layout_marginRight="127dp"
+        android:layout_marginBottom="103dp"
+        android:background="@drawable/boxtype"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@+id/newActivity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RadioButton
+            android:id="@+id/l1"
+            style="@android:style/Widget.Holo.CompoundButton.RadioButton"
+            android:layout_width="188dp"
+            android:layout_height="wrap_content"
+            android:button="@android:drawable/alert_light_frame"
+            android:checked="true"
+            android:text="ロト６"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/l2"
+            android:layout_width="188dp"
+            android:layout_height="64dp"
+            android:button="@android:drawable/alert_light_frame"
+            android:text="ロト７"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/l3"
+            android:layout_width="188dp"
+            android:layout_height="wrap_content"
+            android:button="@android:drawable/alert_light_frame"
+            android:text="ミニロト"
+            android:textSize="18sp" />
+
+    </RadioGroup>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
